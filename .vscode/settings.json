@@ -31,24 +31,28 @@
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "javascript.preferences.importModuleSpecifier": "non-relative"
   },
   "[javascriptreact]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.colorDecorators": true
+    "editor.colorDecorators": true,
+    "javascript.preferences.importModuleSpecifier": "non-relative"
   },
   "[typescript]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "typescript.preferences.importModuleSpecifier": "non-relative"
   },
   "[typescriptreact]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.colorDecorators": true
+    "editor.colorDecorators": true,
+    "typescript.preferences.importModuleSpecifier": "non-relative"
   },
   "[go]": {
     "editor.tabSize": 2,
@@ -98,4 +102,3 @@
   },
   "cSpell.words": ["imgtext", "navbtn"]
 }
-
