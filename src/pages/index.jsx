@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useCallback } from 'react'
+import { useCallback, useEffect } from 'react'
 import { Footer } from 'src/components/Footer/Footer'
 import { Header } from 'src/components/Header/Header'
 import { Main } from 'src/components/Main/Main'
@@ -10,6 +10,14 @@ export default function Home() {
     e.preventDefault()
     console.log(e.target)
     alert(123)
+  }, [])
+
+  useEffect(() => {
+    document.body.style.backgroundColor = 'lightblue'
+
+    return () => {
+      document.body.style.backgroundColor = ''
+    }
   }, [])
 
   return (
