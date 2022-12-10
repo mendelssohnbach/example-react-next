@@ -1,16 +1,16 @@
 import Head from 'next/head'
-import { useCallback, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Footer } from 'src/components/Footer/Footer'
 import { Header } from 'src/components/Header/Header'
 import { Main } from 'src/components/Main/Main'
 import styles from 'src/styles/Home.module.css'
 
 export default function Home() {
-  const handleClick = useCallback((e) => {
-    e.preventDefault()
-    console.log(e.target)
-    alert(123)
-  }, [])
+  const [count, setCount] = useState(1)
+
+  const handleClick = (e) => {
+    setCount((prev) => prev + 1)
+  }
 
   useEffect(() => {
     document.body.style.backgroundColor = 'lightblue'
@@ -30,6 +30,7 @@ export default function Home() {
         />
       </Head>
       <Header />
+      <h2>{count}</h2>
       <button onClick={handleClick}>ボタン</button>
       <Main page="index" />
       <Footer />
